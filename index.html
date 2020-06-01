@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placar Dominó</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1> Dominó </h1>
+    <div class="dropdown">
+        <button class="zerar" id="zerar">Zerar</button>
+        <div id="lista" class="lista">
+            <a href="javascript:zeraPlacarParcial()">Placar Parcial</a>
+            <a href="javascript:zeraPlacarGeral()">Placar Geral</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <h2>Placar Geral</h2>
+        <div class="head">
+            Jogador 1
+            <p id="pgp1">0</p>
+            <p style="font-size: 30px"> x </p>
+            <p id="pgp2">0</p> Jogador 2
+        </div>
+
+        <div class="placar">
+            <div class="player">
+                <label>JOGADOR 1</label>
+                <p class="pontoPlayer1" id="pp1">0</p>
+                <button class="btn1" id="btn1">Ponto</button>
+            </div>
+            <div class="player">
+                <label>JOGADOR 2</label>
+                <p class="pontoPlayer2" id="pp2">0</p>
+                <button class="btn2" id="btn2">Ponto</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

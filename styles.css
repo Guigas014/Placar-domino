@@ -1,0 +1,147 @@
+body {
+    background-color: #cae8db;
+    margin: 0px;
+    padding: 0px;
+    color: #114859;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.zerar {
+/*   position: relative; */
+/*   top: 10px;  */
+/*   left: 780px; */
+  height: 40px;
+  cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: grid;
+    justify-content: right; 
+    align-items: right;
+}
+
+.lista {
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 100px;
+    height: 84px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border: bold;
+    border-radius: 6px;
+}
+
+.lista a {
+    font-size: 18px;
+    font-weight: 400;
+    color: #114859;
+    text-decoration: none;
+    display: block;
+    padding: 12px 16px;
+}
+
+.lista a:hover {
+    background-color: #ddd;
+    border: bold;
+    border-radius: 6px;
+}
+
+.show { display: block; }
+
+.main {
+  background-color: #93cca7;
+  width: 400px;
+  height: 300px;
+  padding: 10px;
+  margin-top: 2px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  display: grid;
+  text-align: center;
+  font-weight: 500;
+}
+
+.head {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-size: 40px;
+  margin-top: 0px;
+}
+
+.player {
+  display: grid;
+  grid-template-columns: repeat(3, 110px);
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  font-size: 20px;
+}
+
+.pontoPlayer1, .pontoPlayer2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+button {
+  background-color: #cae7e8;
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border: bold;
+  border-radius: 6px;
+  margin: 10px;
+  color: #114859;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 540px) {
+    .main {
+        width: 90vw;
+        height: 110%;
+    }
+    
+    .head {
+        height: 100px;
+    }
+    
+    .dropdown {
+        justify-content: center; 
+        align-items: center;
+}
+    
+    .lista {
+        left: 19vw;
+        width: 205px;
+    }
+    
+    .player {
+        grid-template-columns: repeat(2, 110px);
+    }
+    
+    label {
+        margin-left: 10px;
+    }
+    
+    button {
+         width: 200px;
+         height: 40px;
+    }    
+}
